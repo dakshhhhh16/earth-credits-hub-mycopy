@@ -161,6 +161,49 @@ const Homepage = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="py-20 bg-muted/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+                About Blue Carbon Registry
+              </h2>
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  Blue carbon ecosystems—mangroves, seagrass beds, and salt marshes—are among the most efficient carbon sinks on Earth, storing carbon at rates up to 10 times higher than terrestrial forests.
+                </p>
+                <p>
+                  Our platform leverages blockchain technology and AI-powered monitoring to create a transparent, verifiable system for blue carbon restoration projects. We ensure that every carbon credit represents real, measurable environmental impact.
+                </p>
+                <p>
+                  Built for the National Centre for Coastal Research (NCCR), Ministry of Earth Sciences, this platform represents the future of environmental verification and community-driven conservation.
+                </p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-4">
+              <Card className="p-6 text-center border-0 bg-card/50">
+                <div className="text-2xl font-bold text-primary mb-2">10x</div>
+                <div className="text-sm text-muted-foreground">Carbon Storage Efficiency</div>
+              </Card>
+              <Card className="p-6 text-center border-0 bg-card/50">
+                <div className="text-2xl font-bold text-secondary mb-2">100%</div>
+                <div className="text-sm text-muted-foreground">Blockchain Verified</div>
+              </Card>
+              <Card className="p-6 text-center border-0 bg-card/50">
+                <div className="text-2xl font-bold text-success mb-2">24/7</div>
+                <div className="text-sm text-muted-foreground">AI Monitoring</div>
+              </Card>
+              <Card className="p-6 text-center border-0 bg-card/50">
+                <div className="text-2xl font-bold text-primary mb-2">∞</div>
+                <div className="text-sm text-muted-foreground">Community Impact</div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">

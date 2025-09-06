@@ -4,11 +4,15 @@ import { Button } from '@/components/ui/button';
 import { Waves, Leaf } from 'lucide-react';
 
 const Navbar = () => {
-  const scrollToFeatures = () => {
-    const featuresSection = document.getElementById('features');
-    if (featuresSection) {
-      featuresSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -26,18 +30,24 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-foreground hover:text-primary transition-colors">
-              Home
-            </Link>
             <button 
-              onClick={scrollToFeatures}
+              onClick={scrollToTop}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Home
+            </button>
+            <button 
+              onClick={() => scrollToSection('features')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Features
             </button>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
               About
-            </a>
+            </button>
           </div>
 
           {/* Login Button */}
