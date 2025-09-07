@@ -12,7 +12,7 @@ import DashboardHeader from './DashboardHeader';
 import { Upload, MapPin, Calendar, Image, MessageSquare, Edit } from 'lucide-react';
 
 // Import the Chatbot component we created
-import { Chatbot } from '@/components/ui/Chatbot';
+import { Chatbot } from '@/components/Chatbot';
 
 const NGODashboard = () => {
   // State for the manual form remains the same
